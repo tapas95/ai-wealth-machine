@@ -1,42 +1,88 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import "tailwindcss";
+@theme{
+  --color-primary: #FF4C01;
+  --color-secondary: #FEC201;
+  --color-gray: #F5F5F5;
+}
+@font-face {
+	font-display: "swap";
+	font-family: "AtChrome";
+	src: url("./assets/fonts/AtChromeTRIAL-Air.otf") format("opentype");
+	font-weight: 100;
+	font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+	font-display: "swap";
+	font-family: "AtChrome";
+	src: url("./assets/fonts/AtChromeTRIAL-Light.otf")
+		format("opentype");
+	font-weight: 300;
+	font-style: normal;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+@font-face {
+	font-display: "swap";
+	font-family: "AtChrome";
+	src: url("./assets/fonts/AtChromeTRIAL-Regular.otf")
+		format("opentype");
+	font-weight: 400;
+	font-style: normal;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+	font-display: "swap";
+	font-family: "AtChrome";
+	src: url("./assets/fonts/AtChromeTRIAL-Medium.otf")
+		format("opentype");
+	font-weight: 500;
+	font-style: normal;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@font-face {
+	font-display: "swap";
+	font-family: "AtChrome";
+	src: url("./assets/fonts/AtChromeTRIAL-Semibold.otf")
+		format("opentype");
+	font-weight: 600;
+	font-style: normal;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+	font-display: "swap";
+	font-family: "AtChrome";
+	src: url("./assets/fonts/AtChromeTRIAL-Bold.otf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+@font-face {
+	font-display: "swap";
+	font-family: "AtChrome";
+	src: url("./assets/fonts/AtChromeTRIAL-Black.otf")
+		format("opentype");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-display: "swap";
+	font-family: "AtChrome";
+	src: url("./assets/fonts/AtChromeTRIAL-Retina.otf")
+		format("opentype");
+	font-weight: 275;
+	font-style: normal;
+}
+
+@font-face {
+  font-display: "swap";
+  font-family: "AtChrome";
+  src: url("./assets/fonts/AtChromeTRIAL-Super.otf")
+    format("opentype");
+  font-weight: 950;
+  font-style: normal;
+}
+body{
+  font-family: "AtChrome";
+  @apply text-lg text-black/80;
 }
