@@ -3,6 +3,7 @@
   --color-primary: #FF4C01;
   --color-secondary: #FEC201;
   --color-gray: #F5F5F5;
+  --shadow-primary: 0px 4px 36px 0px rgba( 26, 63, 130, 0.56 );
 }
 @font-face {
 	font-display: "swap";
